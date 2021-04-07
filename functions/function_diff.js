@@ -1,6 +1,6 @@
 // Hoisting
 
-const add2 = (x, y) => {
+const add2 = (x, y) => { // Arrow functions don't get hoisted
     return x+y
 }
 
@@ -12,8 +12,12 @@ console.log(
 
 
 
-function adder(x,y){
+function adder(x,y){ // function can be defined after the call
     return x+y
 }
 
+/* 
+runs through the first time and defines
 
+without it 
+*/
